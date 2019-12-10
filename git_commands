@@ -1,0 +1,38 @@
+# конфиг пользователя (локальный) --local
+git config user.name "Tania Vision""
+git config user.email "taniavision@yandex.com
+
+# данные хранятся в файле <project>/.gin/config
+[user]
+    name = Tania Vision
+    email = taniavision@yandex.com
+
+# another locations
+    --system # общесистемный /etc/gitconfig
+    --global # ~/.gitconfig  # $XDG_CONFIG_HOME==$HOME==~  ./config/git/config
+             # $XDG_CONFIG_HOME/git/config or ./config/git/config
+             # для пользователя системы
+    --local  # <project>/.gin/config
+
+MacBook-Pro-MacBook:~ macbook$ git config --global user.name "Tania Vision"
+[user]
+    name = Tania Vision
+
+# Узнать параметры конфигурации
+$ git config --list
+credential.helper=osxkeychain
+user.name=Tania Vision
+user.email=taniavision@yandex.com
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+core.ignorecase=true
+core.precomposeunicode=true
+remote.origin.url=git@github.com:taniavision/git_testing_by_P.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.master.remote=origin
+branch.master.merge=refs/heads/master
+user.name=Tania Vision
+user.email=taniavision@yandex.com
+MacBook-Pro-MacBook:git_testing_by_P macbook$
